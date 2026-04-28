@@ -1,0 +1,2163 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bayt Al-Haram | Hajj & Umrah Gifts</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Lato:wght@300;400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --gold-dark: #8B6914;
+    --green: #1A4731;
+    --green-mid: #2A6B4A;
+    --green-light: #3D8B5E;
+    --cream: #FAF6EE;
+    --cream-dark: #F0E8D4;
+    --dark: #0D1F17;
+    --text: #2C2C2C;
+    --text-light: #6B6B6B;
+    --white: #FFFFFF;
+    --shadow: 0 8px 32px rgba(10, 40, 20, 0.15);
+    --shadow-gold: 0 4px 20px rgba(201, 168, 76, 0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    padding-bottom: 70px; /* space for bottom nav on mobile */
+  }
+
+  /* ===== SCROLLBAR ===== */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--cream); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+  /* ===== ARABIC PATTERN OVERLAY ===== */
+  .pattern-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.06'%3E%3Cpath d='M30 0l8 8-8 8-8-8zm0 44l8 8-8 8-8-8zm-30-22l8 8-8 8-8-8zm60 0l8 8-8 8-8-8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* ===== TOP BAR ===== */
+  .top-bar {
+    background: var(--green);
+    color: var(--gold-light);
+    font-size: 12px;
+    padding: 6px 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== DESKTOP NAVBAR ===== */
+  .main-navbar {
+    background: var(--dark);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+
+  .navbar-brand-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    text-decoration: none;
+  }
+
+  .brand-logo-circle {
+    width: 46px;
+    height: 46px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: var(--shadow-gold);
+    flex-shrink: 0;
+  }
+
+  .brand-text-main {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold-light);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    display: block;
+  }
+
+  .brand-text-sub {
+    font-family: 'Amiri', serif;
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    opacity: 0.85;
+  }
+
+  .nav-links-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .nav-links-wrap .nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 28px 16px !important;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .nav-links-wrap .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 16px; right: 16px;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+  }
+
+  .nav-links-wrap .nav-link:hover,
+  .nav-links-wrap .nav-link.active {
+    color: var(--gold-light) !important;
+  }
+
+  .nav-links-wrap .nav-link:hover::after,
+  .nav-links-wrap .nav-link.active::after {
+    transform: scaleX(1);
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .nav-icon-btn {
+    color: rgba(255,255,255,0.8);
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-icon-btn:hover { color: var(--gold-light); background: rgba(255,255,255,0.07); }
+
+  .cart-badge {
+    position: absolute;
+    top: 4px; right: 4px;
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 9px;
+    font-weight: 800;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .nav-search-wrap {
+    position: relative;
+    margin-left: 8px;
+  }
+
+  .nav-search-input {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(201,168,76,0.3);
+    color: white;
+    border-radius: 24px;
+    padding: 7px 16px 7px 38px;
+    font-size: 13px;
+    width: 200px;
+    transition: all 0.3s;
+    outline: none;
+  }
+
+  .nav-search-input::placeholder { color: rgba(255,255,255,0.4); }
+  .nav-search-input:focus { width: 240px; border-color: var(--gold); background: rgba(255,255,255,0.12); }
+
+  .nav-search-icon {
+    position: absolute;
+    left: 12px; top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,0.4);
+    font-size: 14px;
+  }
+
+  /* ===== BOTTOM MOBILE NAV ===== */
+  .bottom-nav {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 2000;
+    background: var(--dark);
+    border-top: 1px solid rgba(201,168,76,0.25);
+    padding: 0;
+    height: 65px;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.4);
+  }
+
+  .bottom-nav-inner {
+    display: flex;
+    height: 100%;
+  }
+
+  .bnav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    padding: 8px 4px;
+    position: relative;
+  }
+
+  .bnav-item i { font-size: 20px; transition: all 0.2s; }
+
+  .bnav-item.active,
+  .bnav-item:hover { color: var(--gold-light); }
+
+  .bnav-item.active i { transform: translateY(-2px); }
+
+  .bnav-item.active::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 20%; right: 20%;
+    height: 2px;
+    background: var(--gold);
+    border-radius: 0 0 4px 4px;
+  }
+
+  .bnav-center-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 4px;
+  }
+
+  .bnav-center-inner {
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--dark);
+    box-shadow: 0 4px 16px rgba(201,168,76,0.5);
+    margin-top: -16px;
+    transition: all 0.2s;
+  }
+
+  .bnav-center-btn:hover .bnav-center-inner { transform: scale(1.08); }
+
+  .bnav-center-label {
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--gold-light);
+    letter-spacing: 0.3px;
+    margin-top: 2px;
+  }
+
+  /* ===== HERO SLIDER ===== */
+  .hero-slider { position: relative; overflow: hidden; }
+
+  .slide {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide-1 { background: linear-gradient(135deg, #0D1F17 0%, #1A4731 40%, #2A6B4A 100%); }
+  .slide-2 { background: linear-gradient(135deg, #1A1200 0%, #3D2A00 40%, #6B4A00 100%); }
+  .slide-3 { background: linear-gradient(135deg, #0D1320 0%, #1A2A4A 40%, #2A4070 100%); }
+
+  .slide-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.08;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9A84C' fill-rule='evenodd'%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3Cpath d='M40 10 L50 25 L40 15 L30 25zm0 60L50 55L40 65L30 55zm-30-30L25 50L15 40L25 30zm60 0L55 50L65 40L55 30z' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .slide-content { position: relative; z-index: 2; padding: 60px 0; }
+
+  .slide-eyebrow {
+    font-family: 'Amiri', serif;
+    color: var(--gold);
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: block;
+    opacity: 0.9;
+  }
+
+  .slide-title {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: clamp(32px, 5vw, 58px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .slide-title span { color: var(--gold-light); }
+
+  .slide-desc {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 32px;
+  }
+
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: var(--dark);
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: var(--shadow-gold);
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-gold:hover {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(201,168,76,0.45);
+    color: var(--dark);
+  }
+
+  .btn-outline-gold {
+    border: 2px solid var(--gold);
+    color: var(--gold-light);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border-radius: 4px;
+    background: transparent;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 12px;
+  }
+
+  .btn-outline-gold:hover {
+    background: var(--gold);
+    color: var(--dark);
+  }
+
+  .slide-img-wrap {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .slide-img-wrap .hero-icon {
+    font-size: 160px;
+    line-height: 1;
+    filter: drop-shadow(0 20px 40px rgba(201,168,76,0.4));
+    animation: float 3s ease-in-out infinite;
+    display: block;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 28px; height: 3px;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.4);
+    border: none;
+  }
+
+  .carousel-indicators .active { background: var(--gold); }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon { filter: invert(1) brightness(2); }
+
+  /* ===== SECTION TITLES ===== */
+  .section-header { text-align: center; margin-bottom: 40px; }
+
+  .section-eyebrow {
+    font-family: 'Amiri', serif;
+    color: var(--gold-dark);
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark);
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .section-divider {
+    width: 60px; height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    margin: 0 auto 12px;
+    border-radius: 2px;
+  }
+
+  .section-subtitle { color: var(--text-light); font-size: 15px; max-width: 520px; margin: 0 auto; }
+
+  /* ===== CATEGORIES ===== */
+  .categories-section {
+    padding: 60px 0;
+    background: var(--cream);
+  }
+
+  .category-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(201,168,76,0.15);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .category-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--green-light));
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+
+  .category-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+  .category-card:hover::before { transform: scaleX(1); }
+
+  .cat-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+    display: block;
+    line-height: 1;
+  }
+
+  .cat-name {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .cat-count { color: var(--text-light); font-size: 12px; }
+
+  /* ===== PRODUCTS ===== */
+  .products-section {
+    padding: 60px 0;
+    background: var(--cream-dark);
+  }
+
+  .product-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid rgba(201,168,76,0.12);
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+
+  .product-img-wrap {
+    position: relative;
+    background: linear-gradient(135deg, var(--cream), var(--cream-dark));
+    padding: 28px 20px 20px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-img-wrap .prod-icon {
+    font-size: 80px;
+    line-height: 1;
+    transition: transform 0.3s;
+    display: block;
+  }
+
+  .product-card:hover .prod-icon { transform: scale(1.08); }
+
+  .product-badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    background: var(--green);
+    color: var(--gold-light);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  .product-badge.sale { background: #C0392B; color: white; }
+  .product-badge.new { background: var(--gold-dark); color: white; }
+
+  .wishlist-btn {
+    position: absolute;
+    top: 12px; right: 12px;
+    width: 34px; height: 34px;
+    background: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-light);
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: all 0.2s;
+    border: none;
+  }
+
+  .wishlist-btn:hover { color: #C0392B; transform: scale(1.1); }
+
+  .product-body {
+    padding: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-category {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    margin-bottom: 6px;
+  }
+
+  .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .product-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .stars { color: var(--gold); font-size: 11px; letter-spacing: 1px; }
+  .rating-count { color: var(--text-light); font-size: 11px; }
+
+  .product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid var(--cream-dark);
+  }
+
+  .product-price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price-current {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .price-old {
+    font-size: 12px;
+    color: var(--text-light);
+    text-decoration: line-through;
+  }
+
+  .add-cart-btn {
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .add-cart-btn:hover {
+    background: var(--green-mid);
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(26,71,49,0.3);
+  }
+
+  /* ===== FEATURES BANNER ===== */
+  .features-section {
+    padding: 48px 0;
+    background: var(--green);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .features-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 10L50 30L70 30L55 45L60 65L40 52L20 65L25 45L10 30L30 30Z' fill='%23C9A84C'/%3E%3C/svg%3E");
+  }
+
+  .feature-item { text-align: center; padding: 16px 12px; position: relative; z-index: 1; }
+
+  .feature-icon {
+    font-size: 36px;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .feature-title {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .feature-desc { color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.5; }
+
+  /* ===== SPECIAL OFFER BANNER ===== */
+  .offer-section {
+    padding: 64px 0;
+    background: linear-gradient(135deg, var(--dark) 0%, #1A2A1A 50%, var(--green) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .offer-section::after {
+    content: '﷽';
+    font-family: 'Amiri', serif;
+    position: absolute;
+    right: -20px; top: -20px;
+    font-size: 200px;
+    color: rgba(201,168,76,0.04);
+    line-height: 1;
+  }
+
+  .offer-badge {
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 6px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .offer-title {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .offer-title .gold-text { color: var(--gold-light); }
+
+  .offer-desc { color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.7; margin-bottom: 28px; }
+
+  .countdown-wrap { display: flex; gap: 16px; margin-bottom: 32px; }
+
+  .countdown-box {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 12px;
+    padding: 14px 18px;
+    text-align: center;
+    min-width: 68px;
+  }
+
+  .countdown-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold-light);
+    display: block;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .countdown-label { color: rgba(255,255,255,0.5); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials-section {
+    padding: 64px 0;
+    background: var(--cream);
+  }
+
+  .testimonial-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 24px;
+    border: 1px solid rgba(201,168,76,0.15);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .testimonial-card::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    color: rgba(201,168,76,0.1);
+    position: absolute;
+    top: -10px; left: 16px;
+    line-height: 1;
+  }
+
+  .testimonial-text {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .testimonial-author { display: flex; align-items: center; gap: 12px; }
+
+  .author-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--green-light), var(--green));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .author-name { font-weight: 700; color: var(--dark); font-size: 13px; }
+  .author-loc { color: var(--text-light); font-size: 12px; }
+
+  /* ===== NEWSLETTER ===== */
+  .newsletter-section {
+    padding: 64px 0;
+    background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-dark));
+    position: relative;
+    overflow: hidden;
+  }
+
+  .newsletter-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.08'%3E%3Cpath d='M30 0l8 8-8 8-8-8zm0 44l8 8-8 8-8-8z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .newsletter-content { text-align: center; position: relative; z-index: 1; }
+
+  .newsletter-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark);
+    font-size: clamp(24px, 3.5vw, 36px);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .newsletter-desc { color: rgba(13,31,23,0.75); font-size: 15px; margin-bottom: 28px; }
+
+  .newsletter-form { display: flex; gap: 0; max-width: 480px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); }
+
+  .newsletter-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    background: white;
+  }
+
+  .newsletter-btn {
+    background: var(--dark);
+    color: var(--gold-light);
+    border: none;
+    padding: 15px 24px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .newsletter-btn:hover { background: var(--green); }
+
+  /* ===== CONTACT SECTION ===== */
+  .contact-section {
+    padding: 64px 0;
+    background: var(--cream-dark);
+  }
+
+  .contact-card {
+    background: white;
+    border-radius: 20px;
+    padding: 36px 32px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  .contact-info-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .contact-icon {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-gold);
+  }
+
+  .contact-label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 4px; }
+  .contact-value { color: var(--dark); font-weight: 600; font-size: 14px; }
+
+  .form-control-custom {
+    background: var(--cream);
+    border: 1.5px solid rgba(201,168,76,0.2);
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-size: 14px;
+    color: var(--text);
+    transition: all 0.2s;
+    width: 100%;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    resize: none;
+  }
+
+  .form-control-custom:focus {
+    border-color: var(--gold);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(201,168,76,0.12);
+  }
+
+  .form-label-custom {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  /* ===== FOOTER ===== */
+  .main-footer {
+    background: var(--dark);
+    padding: 60px 0 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--green), var(--gold), var(--green-light));
+  }
+
+  .footer-brand { margin-bottom: 20px; }
+
+  .footer-desc {
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 280px;
+  }
+
+  .social-links { display: flex; gap: 10px; }
+
+  .social-btn {
+    width: 38px; height: 38px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.6);
+    font-size: 16px;
+    transition: all 0.2s;
+    text-decoration: none;
+    border: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .social-btn:hover { background: var(--gold); color: var(--dark); transform: translateY(-2px); }
+
+  .footer-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold-light);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .footer-links { list-style: none; padding: 0; margin: 0; }
+
+  .footer-links li { margin-bottom: 10px; }
+
+  .footer-links a {
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .footer-links a::before {
+    content: '›';
+    color: var(--gold);
+    font-size: 16px;
+  }
+
+  .footer-links a:hover { color: var(--gold-light); padding-left: 4px; }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-top: 40px;
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 12px; }
+  .footer-copy span { color: var(--gold); }
+
+  .payment-icons { display: flex; gap: 8px; align-items: center; }
+
+  .payment-icon {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: rgba(255,255,255,0.6);
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  /* ===== MOBILE MENU TOGGLE ===== */
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+
+  .mobile-menu-btn:hover { background: rgba(255,255,255,0.08); color: var(--gold-light); }
+
+  /* ===== FILTER TABS ===== */
+  .filter-tabs {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+
+  .filter-tab {
+    background: white;
+    border: 1.5px solid rgba(201,168,76,0.25);
+    color: var(--text-light);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 9px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+
+  .filter-tab.active,
+  .filter-tab:hover {
+    background: var(--green);
+    border-color: var(--green);
+    color: white;
+  }
+
+  /* ===== TRUST BADGES ===== */
+  .trust-section {
+    padding: 32px 0;
+    background: white;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  .trust-item { display: flex; align-items: center; gap: 10px; justify-content: center; }
+  .trust-icon { font-size: 22px; color: var(--gold); }
+  .trust-text { font-size: 13px; font-weight: 600; color: var(--text); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 991px) {
+    .nav-links-wrap { display: none; }
+    .mobile-menu-btn { display: flex; align-items: center; }
+    .nav-search-wrap { display: none; }
+  }
+
+  @media (max-width: 767px) {
+    body { padding-bottom: 70px; }
+    .bottom-nav { display: block; }
+    .top-bar { font-size: 11px; padding: 5px 8px; }
+
+    .slide { min-height: 420px; }
+    .slide-content { padding: 40px 0 24px; }
+    .slide-img-wrap .hero-icon { font-size: 100px; }
+
+    .btn-outline-gold { margin-left: 0; margin-top: 10px; }
+    .slide-btns { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+
+    .countdown-wrap { gap: 10px; }
+    .countdown-box { padding: 10px 12px; min-width: 56px; }
+    .countdown-num { font-size: 22px; }
+
+    .newsletter-form { flex-direction: column; border-radius: 12px; }
+    .newsletter-input { border-radius: 8px 8px 0 0; }
+    .newsletter-btn { border-radius: 0 0 8px 8px; }
+
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+    .features-section .row > div { border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .features-section .row > div:last-child { border-bottom: none; }
+
+    .contact-card { padding: 24px 16px; }
+  }
+
+  @media (max-width: 480px) {
+    .trust-item { gap: 6px; }
+    .trust-text { font-size: 11px; }
+    .product-name { font-size: 14px; }
+  }
+
+  /* ===== ANIMATIONS ===== */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== BISMILLAH BANNER ===== */
+  .bismillah-banner {
+    background: linear-gradient(90deg, var(--green), var(--green-mid), var(--green));
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .bismillah-text {
+    font-family: 'Amiri', serif;
+    color: var(--gold-light);
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <i class="bi bi-truck me-2"></i> Free Shipping on Orders Above PKR 3,000 &nbsp;|&nbsp;
+    <i class="bi bi-telephone me-2"></i> +92 300 1234567 &nbsp;|&nbsp;
+    <i class="bi bi-clock me-2"></i> Mon–Sat: 9AM – 9PM
+  </div>
+</div>
+
+<!-- BISMILLAH BANNER -->
+<div class="bismillah-banner">
+  <span class="bismillah-text">﷽</span>
+</div>
+
+<!-- DESKTOP NAVBAR -->
+<nav class="main-navbar">
+  <div class="container d-flex align-items-center justify-content-between py-1">
+
+    <!-- Brand -->
+    <a href="#" class="navbar-brand-wrap">
+      <div class="brand-logo-circle">🕋</div>
+      <div>
+        <span class="brand-text-main">Bayt Al-Haram</span>
+        <span class="brand-text-sub">Hajj & Umrah Gifts</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <div class="nav-links-wrap">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#categories" class="nav-link">Categories</a>
+      <a href="#offers" class="nav-link">Offers</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+    <!-- Actions -->
+    <div class="d-flex align-items-center gap-2">
+      <!-- Search -->
+      <div class="nav-search-wrap">
+        <i class="bi bi-search nav-search-icon"></i>
+        <input type="text" class="nav-search-input" placeholder="Search gifts…">
+      </div>
+
+      <!-- Icons -->
+      <div class="nav-actions">
+        <a href="#" class="nav-icon-btn" title="Wishlist">
+          <i class="bi bi-heart"></i>
+        </a>
+        <a href="#" class="nav-icon-btn" title="Cart" style="position:relative">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge">3</span>
+        </a>
+        <a href="#" class="nav-icon-btn" title="Account">
+          <i class="bi bi-person-circle"></i>
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" style="display:none; background:#0D1F17; border-top: 1px solid rgba(201,168,76,0.2);">
+    <div class="container py-2">
+      <a href="#home" class="d-block py-2 px-2" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:600; font-size:14px; border-bottom:1px solid rgba(255,255,255,0.06)">🏠 Home</a>
+      <a href="#products" class="d-block py-2 px-2" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:600; font-size:14px; border-bottom:1px solid rgba(255,255,255,0.06)">🎁 Products</a>
+      <a href="#categories" class="d-block py-2 px-2" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:600; font-size:14px; border-bottom:1px solid rgba(255,255,255,0.06)">📦 Categories</a>
+      <a href="#offers" class="d-block py-2 px-2" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:600; font-size:14px; border-bottom:1px solid rgba(255,255,255,0.06)">🏷️ Offers</a>
+      <a href="#contact" class="d-block py-2 px-2" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:600; font-size:14px;">📞 Contact</a>
+      <div class="mt-3 mb-2 px-2">
+        <input type="text" class="form-control" placeholder="Search gifts…" style="background:rgba(255,255,255,0.08); border:1px solid rgba(201,168,76,0.3); color:white; border-radius:8px;">
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SLIDER -->
+<section class="hero-slider" id="home">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="slide slide-1">
+          <div class="slide-pattern"></div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-content">
+                <span class="slide-eyebrow">🕌 Sacred Gifts Collection</span>
+                <h1 class="slide-title">Premium <span>Hajj & Umrah</span> Gift Sets</h1>
+                <p class="slide-desc">Bless your loved ones with beautifully curated Islamic gifts — Tasbih, Zamzam, Quran sets and much more. Every gift, a prayer.</p>
+                <div class="slide-btns">
+                  <a href="#products" class="btn-gold">Shop Now</a>
+                  <a href="#categories" class="btn-outline-gold">View All</a>
+                </div>
+              </div>
+              <div class="col-lg-6 slide-img-wrap d-none d-lg-block">
+                <span class="hero-icon">🕋</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="slide slide-2">
+          <div class="slide-pattern"></div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-content">
+                <span class="slide-eyebrow">📿 Tasbih & Prayer Essentials</span>
+                <h1 class="slide-title">Handcrafted <span>Tasbih</span> Collection</h1>
+                <p class="slide-desc">Genuine Aqeeq, Sandalwood & Crystal Tasbih. Each bead carries the essence of devotion. The perfect Hajj return gift.</p>
+                <div class="slide-btns">
+                  <a href="#products" class="btn-gold">Explore Tasbih</a>
+                </div>
+              </div>
+              <div class="col-lg-6 slide-img-wrap d-none d-lg-block">
+                <span class="hero-icon" style="animation-delay:0.5s">📿</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="slide slide-3">
+          <div class="slide-pattern"></div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-content">
+                <span class="slide-eyebrow">🤲 Zamzam & Sacred Items</span>
+                <h1 class="slide-title">Pure <span>Zamzam Water</span> & Sacred Sets</h1>
+                <p class="slide-desc">Authentic Zamzam water bottles, Hajar-e-Aswad replicas, and blessed soil sets. Bring Makkah home with you.</p>
+                <div class="slide-btns">
+                  <a href="#products" class="btn-gold">Order Now</a>
+                  <a href="#contact" class="btn-outline-gold">Contact Us</a>
+                </div>
+              </div>
+              <div class="col-lg-6 slide-img-wrap d-none d-lg-block">
+                <span class="hero-icon" style="animation-delay:1s">🤲</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+<!-- TRUST BADGES -->
+<section class="trust-section">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <div class="trust-item">
+          <span class="trust-icon">✅</span>
+          <span class="trust-text">100% Authentic Products</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="trust-item">
+          <span class="trust-icon">🚚</span>
+          <span class="trust-text">Fast Delivery Pakistan</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="trust-item">
+          <span class="trust-icon">🔒</span>
+          <span class="trust-text">Secure COD Payment</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="trust-item">
+          <span class="trust-icon">↩️</span>
+          <span class="trust-text">Easy 7-Day Returns</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories-section" id="categories">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Browse By Type</span>
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Find the perfect Islamic gift for every occasion — Hajj return, Eid, or a blessing for someone you love.</p>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-2 fade-up">
+        <a href="#products" class="category-card">
+          <span class="cat-icon">📿</span>
+          <span class="cat-name">Tasbih</span>
+          <span class="cat-count">42 items</span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up">
+        <a href="#products" class="category-card">
+          <span class="cat-icon">📖</span>
+          <span class="cat-name">Holy Quran</span>
+          <span class="cat-count">28 items</span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up">
+        <a href="#products" class="category-card">
+          <span class="cat-icon">💧</span>
+          <span class="cat-name">Zamzam</span>
+          <span class="cat-count">15 items</span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up">
+        <a href="#products" class="category-card">
+          <span class="cat-icon">🧴</span>
+          <span class="cat-name">Attar & Oils</span>
+          <span class="cat-count">36 items</span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up">
+        <a href="#products" class="category-card">
+          <span class="cat-icon">🎁</span>
+          <span class="cat-name">Gift Sets</span>
+          <span class="cat-count">22 items</span>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up">
+        <a href="#products" class="category-card">
+          <span class="cat-icon">🕌</span>
+          <span class="cat-name">Decor</span>
+          <span class="cat-count">31 items</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Handpicked For You</span>
+      <h2 class="section-title">Featured Products</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs fade-up">
+      <button class="filter-tab active" onclick="filterTabs(this)">All</button>
+      <button class="filter-tab" onclick="filterTabs(this)">Best Sellers</button>
+      <button class="filter-tab" onclick="filterTabs(this)">Tasbih</button>
+      <button class="filter-tab" onclick="filterTabs(this)">Gift Sets</button>
+      <button class="filter-tab" onclick="filterTabs(this)">Zamzam</button>
+      <button class="filter-tab" onclick="filterTabs(this)">New Arrivals</button>
+    </div>
+
+    <div class="row g-3 g-md-4" id="productGrid">
+
+      <!-- Product 1 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge">Best Seller</span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <span class="prod-icon">📿</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Tasbih</span>
+            <h3 class="product-name">Premium Aqeeq Stone Tasbih — 99 Beads</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(128)</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">PKR 1,850</span>
+                <span class="price-old">PKR 2,400</span>
+              </div>
+              <button class="add-cart-btn" onclick="addToCart(this)">
+                <i class="bi bi-bag-plus"></i>
+                <span class="d-none d-md-inline">Add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge new">New</span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <span class="prod-icon">🎁</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Gift Set</span>
+            <h3 class="product-name">Hajj Mubarak Premium Gift Box Set</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(94)</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">PKR 3,500</span>
+                <span class="price-old">PKR 4,200</span>
+              </div>
+              <button class="add-cart-btn" onclick="addToCart(this)">
+                <i class="bi bi-bag-plus"></i>
+                <span class="d-none d-md-inline">Add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge sale">Sale</span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <span class="prod-icon">💧</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Zamzam</span>
+            <h3 class="product-name">Zamzam Water Bottle — 1 Litre Crystal</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(67)</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">PKR 950</span>
+                <span class="price-old">PKR 1,200</span>
+              </div>
+              <button class="add-cart-btn" onclick="addToCart(this)">
+                <i class="bi bi-bag-plus"></i>
+                <span class="d-none d-md-inline">Add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <span class="prod-icon">📖</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Holy Quran</span>
+            <h3 class="product-name">Colour Coded Tajweed Quran — Velvet Cover</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(215)</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">PKR 2,200</span>
+              </div>
+              <button class="add-cart-btn" onclick="addToCart(this)">
+                <i class="bi bi-bag-plus"></i>
+                <span class="d-none d-md-inline">Add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge">Popular</span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <span class="prod-icon">🧴</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Attar & Oils</span>
+            <h3 class="product-name">Pure Oud Al-Madinah Attar — 12ml</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(183)</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">PKR 1,600</span>
+                <span class="price-old">PKR 1,900</span>
+              </div>
+              <button class="add-cart-btn" onclick="addToCart(this)">
+                <i class="bi bi-bag-plus"></i>
+                <span class="d-none d-md-inline">Add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge new">New</span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <span class="prod-icon">🕌</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Decor</span>
+            <h3 class="product-name">Kaaba Wall Art — Engraved Gold Frame</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(41)</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">PKR 2,800</span>
+                <span class="price-old">PKR 3,500</span>
+              </div>
+              <button class="add-cart-btn" onclick="addToCart(this)">
+                <i class="bi bi-bag-plus"></i>
+                <span class="d-none d-md-inline">Add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <span class="prod-icon">🤍</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Prayer</span>
+            <h3 class="product-name">Luxury Embroidered Musallah — Prayer Mat</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(302)</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">PKR 1,400</span>
+                <span class="price-old">PKR 1,800</span>
+              </div>
+              <button class="add-cart-btn" onclick="addToCart(this)">
+                <i class="bi bi-bag-plus"></i>
+                <span class="d-none d-md-inline">Add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge sale">Sale</span>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+            <span class="prod-icon">🌙</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Gift Set</span>
+            <h3 class="product-name">Umrah Complete Return Gift Bundle</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(77)</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">PKR 5,500</span>
+                <span class="price-old">PKR 6,800</span>
+              </div>
+              <button class="add-cart-btn" onclick="addToCart(this)">
+                <i class="bi bi-bag-plus"></i>
+                <span class="d-none d-md-inline">Add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4 fade-up">
+      <a href="#" class="btn-gold">View All Products &nbsp;<i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-6 col-md-3 fade-up">
+        <div class="feature-item">
+          <span class="feature-icon">🕋</span>
+          <div class="feature-title">Makkah Sourced</div>
+          <div class="feature-desc">Authentic items sourced directly from Makkah & Madinah</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up">
+        <div class="feature-item">
+          <span class="feature-icon">📦</span>
+          <div class="feature-title">Gift Wrapping</div>
+          <div class="feature-desc">Premium Islamic gift packaging for every order</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up">
+        <div class="feature-item">
+          <span class="feature-icon">🚀</span>
+          <div class="feature-title">Pakistan-Wide</div>
+          <div class="feature-desc">Delivery to all 130+ cities across Pakistan</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up">
+        <div class="feature-item">
+          <span class="feature-icon">💯</span>
+          <div class="feature-title">Halal Certified</div>
+          <div class="feature-desc">All products are certified authentic & halal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIAL OFFER -->
+<section class="offer-section" id="offers">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="offer-badge">🔥 Limited Time Offer</div>
+        <h2 class="offer-title">Hajj Season <span class="gold-text">Special Bundle</span> — Up to 30% Off!</h2>
+        <p class="offer-desc">This Hajj season, gift your loved ones the most premium collection of Islamic items. Our exclusive Hajj Bundle includes Tasbih, Zamzam bottle, Attar, Quran, and Prayer Mat — everything in one blessed package.</p>
+        <div class="countdown-wrap">
+          <div class="countdown-box">
+            <span class="countdown-num" id="cd-days">12</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-num" id="cd-hours">08</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-num" id="cd-mins">34</span>
+            <span class="countdown-label">Mins</span>
+          </div>
+          <div class="countdown-box">
+            <span class="countdown-num" id="cd-secs">22</span>
+            <span class="countdown-label">Secs</span>
+          </div>
+        </div>
+        <a href="#products" class="btn-gold">Grab the Bundle</a>
+      </div>
+      <div class="col-lg-5 text-center d-none d-lg-block">
+        <div style="font-size:140px; line-height:1; filter: drop-shadow(0 20px 40px rgba(201,168,76,0.3)); animation: float 4s ease-in-out infinite;">🎁</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">What People Say</span>
+      <h2 class="section-title">Customer Reviews</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="row g-3 g-md-4">
+      <div class="col-md-4 fade-up">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"MashAllah, the Hajj gift set was absolutely beautiful. My mother cried with joy when she received it. Packaging was luxurious and delivery was very fast. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩</div>
+            <div>
+              <div class="author-name">Fatima Malik</div>
+              <div class="author-loc">⭐⭐⭐⭐⭐ — Karachi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Ordered Aqeeq Tasbih and Pure Oud Attar as Umrah return gifts for family. Every item was authentic and beautifully packed. Will order again InshaAllah!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨</div>
+            <div>
+              <div class="author-name">Ahmed Siddiqui</div>
+              <div class="author-loc">⭐⭐⭐⭐⭐ — Lahore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Best Islamic gift shop in Pakistan. Their Zamzam water bottles and Quran sets are top quality. Customer service is also excellent. JazakAllah Khair!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩</div>
+            <div>
+              <div class="author-name">Zainab Hussain</div>
+              <div class="author-loc">⭐⭐⭐⭐⭐ — Islamabad</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-content">
+      <h2 class="newsletter-title">🤲 Stay Blessed & Updated</h2>
+      <p class="newsletter-desc">Subscribe to receive exclusive offers, new arrivals, and Islamic inspiration — delivered to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="Enter your email address…">
+        <button class="newsletter-btn">Subscribe &nbsp;✉️</button>
+      </div>
+      <p style="color:rgba(13,31,23,0.6); font-size:12px; margin-top:12px;">
+        <i class="bi bi-lock-fill me-1"></i> No spam. Unsubscribe anytime.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Get In Touch</span>
+      <h2 class="section-title">Contact Us</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Have a question or need help with your order? We're here to assist you.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-lg-5 fade-up">
+        <div class="contact-card">
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <div class="contact-label">Phone / WhatsApp</div>
+              <div class="contact-value">+92 300 1234567</div>
+              <div class="contact-value">+92 321 7654321</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <div class="contact-label">Email Address</div>
+              <div class="contact-value">info@baytalHaram.pk</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="contact-label">Store Address</div>
+              <div class="contact-value">Shop #14, Islamic Plaza, Saddar, Karachi</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+            <div>
+              <div class="contact-label">Working Hours</div>
+              <div class="contact-value">Monday – Saturday: 9AM – 9PM</div>
+              <div class="contact-value" style="color:var(--text-light); font-size:13px;">Sunday: 12PM – 6PM</div>
+            </div>
+          </div>
+          <!-- WhatsApp CTA -->
+          <a href="https://wa.me/923001234567" target="_blank" class="btn-gold d-block text-center mt-2" style="border-radius:10px;">
+            <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7 fade-up">
+        <div class="contact-card">
+          <h4 style="font-family:'Playfair Display', serif; color:var(--dark); margin-bottom:24px; font-size:20px;">Send a Message</h4>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label-custom">Your Name</label>
+              <input type="text" class="form-control-custom" placeholder="Muhammad Ahmad">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-custom">Phone Number</label>
+              <input type="tel" class="form-control-custom" placeholder="+92 300 0000000">
+            </div>
+            <div class="col-12">
+              <label class="form-label-custom">Email Address</label>
+              <input type="email" class="form-control-custom" placeholder="your@email.com">
+            </div>
+            <div class="col-12">
+              <label class="form-label-custom">Subject</label>
+              <input type="text" class="form-control-custom" placeholder="Order Inquiry / Product Question…">
+            </div>
+            <div class="col-12">
+              <label class="form-label-custom">Your Message</label>
+              <textarea class="form-control-custom" rows="4" placeholder="Write your message here…"></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn-gold" style="width:100%; padding:15px; border-radius:10px; font-size:14px; cursor:pointer; border:none;" onclick="this.innerHTML='✅ Message Sent — JazakAllah Khair!'">
+                Send Message &nbsp;<i class="bi bi-send-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <a href="#" class="navbar-brand-wrap">
+            <div class="brand-logo-circle">🕋</div>
+            <div>
+              <span class="brand-text-main">Bayt Al-Haram</span>
+              <span class="brand-text-sub">Hajj & Umrah Gifts</span>
+            </div>
+          </a>
+        </div>
+        <p class="footer-desc">Pakistan's most trusted Islamic gift store. Bringing the blessings of Makkah & Madinah to your doorstep since 2019. Every product, a gift. Every gift, a prayer.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-tiktok"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-lg-2 col-md-3">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#offers">Special Offers</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="col-6 col-lg-2 col-md-3">
+        <h5 class="footer-title">Categories</h5>
+        <ul class="footer-links">
+          <li><a href="#">Tasbih Collection</a></li>
+          <li><a href="#">Holy Quran</a></li>
+          <li><a href="#">Zamzam Water</a></li>
+          <li><a href="#">Attar & Oils</a></li>
+          <li><a href="#">Gift Sets</a></li>
+          <li><a href="#">Islamic Decor</a></li>
+        </ul>
+      </div>
+
+      <!-- Help & Info -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title">Customer Support</h5>
+        <ul class="footer-links">
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return & Refund</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="mt-3 p-3" style="background:rgba(255,255,255,0.04); border-radius:12px; border:1px solid rgba(201,168,76,0.15);">
+          <div style="color:var(--gold-light); font-size:13px; font-weight:600; margin-bottom:6px;">
+            <i class="bi bi-headset me-2"></i>Helpline
+          </div>
+          <div style="color:white; font-size:18px; font-weight:700;">+92 300 1234567</div>
+          <div style="color:rgba(255,255,255,0.5); font-size:12px;">Mon–Sat 9AM – 9PM</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        © 2025 <span>Bayt Al-Haram</span>. All Rights Reserved. Made with ❤️ in Pakistan
+      </div>
+      <div class="payment-icons">
+        <span class="payment-icon">COD</span>
+        <span class="payment-icon">JazzCash</span>
+        <span class="payment-icon">EasyPaisa</span>
+        <span class="payment-icon">Bank</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- BOTTOM MOBILE NAV -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="#home" class="bnav-item active" onclick="setActive(this)">
+      <i class="bi bi-house-fill"></i>
+      <span>Home</span>
+    </a>
+    <a href="#categories" class="bnav-item" onclick="setActive(this)">
+      <i class="bi bi-grid-fill"></i>
+      <span>Categories</span>
+    </a>
+    <!-- Center Cart -->
+    <a href="#" class="bnav-center-btn" onclick="showCartToast()">
+      <div class="bnav-center-inner">🛒</div>
+      <span class="bnav-center-label">Cart (3)</span>
+    </a>
+    <a href="#" class="bnav-item" onclick="setActive(this)">
+      <i class="bi bi-heart-fill"></i>
+      <span>Saved</span>
+    </a>
+    <a href="#contact" class="bnav-item" onclick="setActive(this)">
+      <i class="bi bi-person-fill"></i>
+      <span>Account</span>
+    </a>
+  </div>
+</nav>
+
+<!-- TOAST NOTIFICATION -->
+<div id="toast" style="
+  position:fixed; bottom:80px; left:50%; transform:translateX(-50%) translateY(20px);
+  background:var(--green); color:white; padding:12px 24px; border-radius:30px;
+  font-size:13px; font-weight:700; z-index:9999; opacity:0;
+  transition:all 0.3s; white-space:nowrap; box-shadow:0 4px 20px rgba(0,0,0,0.3);
+  pointer-events:none;
+"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Mobile Menu Toggle
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Close mobile menu on link click
+  document.querySelectorAll('#mobileMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileMenu').style.display = 'none';
+    });
+  });
+
+  // Bottom Nav Active
+  function setActive(el) {
+    document.querySelectorAll('.bnav-item').forEach(i => i.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  // Add to Cart
+  let cartCount = 3;
+  function addToCart(btn) {
+    cartCount++;
+    document.querySelector('.cart-badge').textContent = cartCount;
+    document.querySelector('.bnav-center-label').textContent = `Cart (${cartCount})`;
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<i class="bi bi-check2"></i> Added';
+    btn.style.background = '#2A6B4A';
+    setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; }, 1500);
+    showToast('✅ Added to cart!');
+  }
+
+  // Wishlist
+  document.querySelectorAll('.wishlist-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const icon = this.querySelector('i');
+      if (icon.classList.contains('bi-heart')) {
+        icon.classList.replace('bi-heart', 'bi-heart-fill');
+        this.style.color = '#C0392B';
+        showToast('❤️ Added to wishlist!');
+      } else {
+        icon.classList.replace('bi-heart-fill', 'bi-heart');
+        this.style.color = '';
+        showToast('Removed from wishlist');
+      }
+    });
+  });
+
+  // Cart Toast
+  function showCartToast() {
+    showToast(`🛒 You have ${cartCount} items in cart`);
+  }
+
+  // Toast
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.style.opacity = '1';
+    t.style.transform = 'translateX(-50%) translateY(0)';
+    setTimeout(() => {
+      t.style.opacity = '0';
+      t.style.transform = 'translateX(-50%) translateY(20px)';
+    }, 2200);
+  }
+
+  // Countdown Timer
+  let endTime = new Date().getTime() + (12 * 24 * 60 * 60 * 1000) + (8 * 60 * 60 * 1000) + (34 * 60 * 1000) + (22 * 1000);
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = endTime - now;
+    if (diff <= 0) return;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+  }
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+
+  // Filter Tabs
+  function filterTabs(el) {
+    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  // Scroll Animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Navbar scroll behavior
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.main-navbar');
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 100) {
+      navbar.style.boxShadow = '0 4px 30px rgba(0,0,0,0.5)';
+    } else {
+      navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.4)';
+    }
+    lastScroll = currentScroll;
+  });
+</script>
+
+</body>
+</html>

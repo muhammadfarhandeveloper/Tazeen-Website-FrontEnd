@@ -64,23 +64,23 @@
   }
 
   // Countdown Timer
-  let endTime = new Date().getTime() + (12 * 24 * 60 * 60 * 1000) + (8 * 60 * 60 * 1000) + (34 * 60 * 1000) + (22 * 1000);
+  // let endTime = new Date().getTime() + (12 * 24 * 60 * 60 * 1000) + (8 * 60 * 60 * 1000) + (34 * 60 * 1000) + (22 * 1000);
 
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const diff = endTime - now;
-    if (diff <= 0) return;
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const secs = Math.floor((diff % (1000 * 60)) / 1000);
-    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
-    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
-    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
-    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
-  }
-  setInterval(updateCountdown, 1000);
-  updateCountdown();
+  // function updateCountdown() {
+  //   const now = new Date().getTime();
+  //   const diff = endTime - now;
+  //   if (diff <= 0) return;
+  //   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  //   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  //   const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  //   const secs = Math.floor((diff % (1000 * 60)) / 1000);
+  //   document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
+  //   document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+  //   document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+  //   document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+  // }
+  // setInterval(updateCountdown, 1000);
+  // updateCountdown();
 
   // Filter Tabs
   function filterTabs(el) {

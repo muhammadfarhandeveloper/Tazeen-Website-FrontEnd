@@ -521,6 +521,12 @@
     align-items: center;
     justify-content: center;
   }
+  .product-img-box{
+    padding:0px 40px;
+  }
+  .product-img{
+    width: 100%;
+  }
 
   .product-img-wrap .prod-icon {
     font-size: 80px;
@@ -1144,3 +1150,24 @@
     font-size: 18px;
     letter-spacing: 2px;
   }
+
+  /* Whats App button  */
+
+  .whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
+  padding: 6px 16px;
+  animation: float 3s ease-in-out infinite; 
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}

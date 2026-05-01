@@ -1122,6 +1122,13 @@
     .trust-item { gap: 6px; }
     .trust-text { font-size: 11px; }
     .product-name { font-size: 14px; }
+
+    .product-img-wrap {
+      padding: 0;
+    }
+    .product-img-box{
+      padding:0px ;
+    }
   }
 
   /* ===== ANIMATIONS ===== */
@@ -1150,6 +1157,8 @@
     font-size: 18px;
     letter-spacing: 2px;
   }
+
+
 
   /* Whats App button  */
 

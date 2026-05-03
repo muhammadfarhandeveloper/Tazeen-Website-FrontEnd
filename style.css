@@ -1173,7 +1173,7 @@
   z-index: 100;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   transition: all 0.3s ease-in-out;
-  padding: 6px 16px;
+  padding: 10px 14px;
   animation: float 3s ease-in-out infinite; 
 }
 @keyframes float {

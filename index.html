@@ -48,9 +48,9 @@
 </head>
 
 <body>
-<div id="loader">
-  <div class="spinner"></div>
-</div>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
   <!-- TOP BAR -->
   <div class="top-bar">
     <div class="container">
@@ -142,8 +142,8 @@
 
   <!-- HERO SLIDER -->
   <section class="hero-slider" id="home">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
-
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+<!-- data-bs-interval="4500" -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
@@ -205,10 +205,12 @@
 
       </div>
 
-      <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#heroCarousel"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
-      <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#heroCarousel"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
 
@@ -323,7 +325,7 @@
                 <a class="add-cart-btn fs-6 text-decoration-none"
                   href="https://wa.me/+923308254700?text=Hello%20I%20want%20to%20order%20this%20product%0A%0AProduct%20Name:%20Tazeen%20Umrah%20Pacakage1%0AMOQ:%2050%20Packages%0APrice:%20PKR%2087%20%0A%0AKindly%20share%20details."
                   target="_blank">
-                  <i class="bi bi-whatsapp "></i>
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
                   <span class="d-none d-md-inline">Order</span>
                 </a>
               </div>
@@ -354,7 +356,7 @@
                 <a class="add-cart-btn fs-6 text-decoration-none"
                   href="https://wa.me/+923308254700?text=Hello%20I%20want%20to%20order%20this%20product%0A%0AProduct%20Name:%20Tazeen%20Umrah%20Pacakage2%0AMOQ:%2050%20Packages%0APrice:%20PKR%20119%20%0A%0AKindly%20share%20details."
                   target="_blank">
-                  <i class="bi bi-whatsapp "></i>
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
                   <span class="d-none d-md-inline">Order</span>
                 </a>
               </div>
@@ -385,7 +387,7 @@
                 <a class="add-cart-btn fs-6 text-decoration-none"
                   href="https://wa.me/+923308254700?text=Hello%20I%20want%20to%20order%20this%20product%0A%0AProduct%20Name:%20Tazeen%20Umrah%20Pacakage3%0AMOQ:%2050%20Packages%0APrice:%20PKR%20180%20%0A%0AKindly%20share%20details."
                   target="_blank">
-                  <i class="bi bi-whatsapp "></i>
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
                   <span class="d-none d-md-inline">Order</span>
                 </a>
               </div>
@@ -448,7 +450,7 @@
                 <a class="add-cart-btn fs-6 text-decoration-none"
                   href="https://wa.me/+923308254700?text=Hello%20I%20want%20to%20order%20this%20product%0A%0AProduct%20Name:%20Tazeen%20Hajj%20Pacakage1%0AMOQ:%2050%20Packages%0APrice:%20PKR%2087%20%0A%0AKindly%20share%20details."
                   target="_blank">
-                  <i class="bi bi-whatsapp "></i>
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
                   <span class="d-none d-md-inline">Order</span>
                 </a>
               </div>
@@ -479,7 +481,7 @@
                 <a class="add-cart-btn fs-6 text-decoration-none"
                   href="https://wa.me/+923308254700?text=Hello%20I%20want%20to%20order%20this%20product%0A%0AProduct%20Name:%20Tazeen%20Hajj%20Pacakage2%0AMOQ:%2050%20Packages%0APrice:%20PKR%20119%20%0A%0AKindly%20share%20details."
                   target="_blank">
-                  <i class="bi bi-whatsapp "></i>
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
                   <span class="d-none d-md-inline">Order</span>
                 </a>
               </div>
@@ -510,7 +512,7 @@
                 <a class="add-cart-btn fs-6 text-decoration-none"
                   href="https://wa.me/+923308254700?text=Hello%20I%20want%20to%20order%20this%20product%0A%0AProduct%20Name:%20Tazeen%20Hajj%20Pacakage3%0AMOQ:%2050%20Packages%0APrice:%20PKR%20180%20%0A%0AKindly%20share%20details."
                   target="_blank">
-                  <i class="bi bi-whatsapp "></i>
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
                   <span class="d-none d-md-inline">Order</span>
                 </a>
               </div>
@@ -682,7 +684,9 @@
         <div class="col-lg-5 fade-up">
           <div class="contact-card">
             <div class="contact-info-item">
-              <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg></div>
               <div>
                 <div class="contact-label">Phone / WhatsApp</div>
                 <div class="contact-value">+923308254700</div>
@@ -690,21 +694,30 @@
               </div>
             </div>
             <div class="contact-info-item">
-              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+</svg></div>
               <div>
                 <div class="contact-label">Email Address</div>
                 <div class="contact-value">tazeen@gmail.com</div>
               </div>
             </div>
             <div class="contact-info-item">
-              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg></div>
               <div>
                 <div class="contact-label">Store Address</div>
                 <div class="contact-value">Boltan Market, Karachi</div>
               </div>
             </div>
             <div class="contact-info-item">
-              <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+              <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                </svg></div>
               <div>
                 <div class="contact-label">Working Hours</div>
                 <div class="contact-value">Monday – Saturday: 9AM – 6PM</div>
@@ -714,7 +727,9 @@
             <!-- WhatsApp CTA -->
             <a href="https://wa.me/+923308254700" target="_blank" class="btn-gold d-block text-center mt-2"
               style="border-radius:10px;">
-              <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>&nbsp;&nbsp;Chat on WhatsApp
             </a>
           </div>
         </div>
@@ -749,7 +764,9 @@
                 <button class="btn-gold"
                   style="width:100%; padding:15px; border-radius:10px; font-size:14px; cursor:pointer; border:none;"
                   onclick="this.innerHTML='✅ Message Sent — JazakAllah Khair!'">
-                  Send Message &nbsp;<i class="bi bi-send-fill"></i>
+                  Send Message &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+</svg>
                 </button>
               </div>
             </div>
@@ -779,11 +796,9 @@
           <p class="footer-desc">Pakistan's most trusted Islamic gift store. Bringing the blessings of Makkah & Madinah
             to your doorstep since 2025. Every product, a gift. Every gift, a prayer.</p>
           <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61587154739149" class="social-btn" target="_blank"><i
-                class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/tazeenofficial1.0" class="social-btn" target="_blank"><i
-                class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/+923308254700" class="social-btn" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61587154739149" class="social-btn" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/tazeenofficial1.0" class="social-btn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/+923308254700" class="social-btn" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <!-- <a href="#" class="social-btn"><i class="bi bi-tiktok"></i></a>
           <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a> -->
           </div>
@@ -851,7 +866,7 @@
 
   <!-- Whats App Button  -->
   <a href="https://wa.me/+923308254700" class="whatsapp-float bg-white text-center rounded-4" target="_blank">
-    <i class="bi bi-whatsapp fs-1 text-success"></i>
+    <i class="fa-brands fa-whatsapp fs-1 text-success"></i>
   </a>
 
   <!-- BOTTOM MOBILE NAV -->
@@ -886,9 +901,9 @@
   pointer-events:none;
 "></div>
   <script>
-    window.addEventListener("load", function() {
-  document.getElementById("loader").style.display = "none";
-});
+    window.addEventListener("load", function () {
+      document.getElementById("loader").style.display = "none";
+    });
   </script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
